@@ -16,6 +16,7 @@ cloudinary.config({
   api_secret: process.env.CLOUD_API_SECRET,
 });
 const fileUploadRouter = require("./routes/uploads-route");
+const productsRouter = require("./routes/project-route");
 
 // package middlewares
 app.use(express.json());
@@ -34,7 +35,7 @@ app.get("/", (req, res) => {
 
 //  middlewares
 app.use("/api/v1/", fileUploadRouter);
-app.use("/api/v1/products/", fileUploadRouter);
+app.use("/api/v1/products/", productsRouter);
 
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
