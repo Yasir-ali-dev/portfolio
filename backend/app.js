@@ -34,6 +34,8 @@ app.get("/", (req, res) => {
 
 //  middlewares
 app.use("/api/v1/", fileUploadRouter);
+app.use("/api/v1/products/", fileUploadRouter);
+
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
 
