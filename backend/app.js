@@ -36,6 +36,8 @@ app.get("/", (req, res) => {
 //  middlewares
 app.use("/api/v1/", fileUploadRouter);
 app.use("/api/v1/products/", productsRouter);
+// skills
+// courses
 
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
