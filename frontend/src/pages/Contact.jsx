@@ -22,22 +22,27 @@ const Contact = () => {
             <Button variant='text'>INSTAGRAM</Button>
         </ButtonGroup>
       </Box>
-      <Box  padding={"3em"} flex={1.5}>
-        <Box className="form">
-           <Typography>EMAIL ME</Typography> 
-           <form>
-                <TextField id="standard-basic" label="Standard" variant="standard" />
-                <TextField id="standard-basic" label="Standard" variant="standard" />
+      <Box  padding={"1.5em"} flex={1.5}>
+        <Box className="form" padding={"2em"}>
+           <Typography variant='h4'>EMAIL ME</Typography> 
+           <form className='email-form'>
+                <Box display="flex" justifyContent={"space-between"} paddingY={"2em"}>
+                    <TextField id="name" label="Name" variant="standard" />
+                    <TextField 
+                        id="emial" 
+                        label="Email" 
+                        variant="standard" 
+                    />
+                </Box>
                 <TextField 
-                    id="standard-basic" 
-                    label="Standard" 
+                    id="comments" 
+                    label="Comments" 
                     variant="standard"
                     multiline
-                    maxRows={5}   
+                    rows={4} 
                 />
                 <Button 
                     sx={{
-                        alignSelf:"center",
                         marginTop:"1em",
                         width:"170px",
                         backgroundColor:'#141313',

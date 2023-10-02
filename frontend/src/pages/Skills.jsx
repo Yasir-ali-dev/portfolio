@@ -6,9 +6,8 @@ const Skills = () => {
 
 
   return (
-    <Stack flex={7} padding={"3em"} gap={2}>
+    <Stack flex={7} padding={"3em"} gap={1.5}>
       <Typography 
-        textAlign={"center"} 
         variant='h4'
       >Skills</Typography>
       <Typography 

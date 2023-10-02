@@ -17,3 +17,8 @@
 .form {
   background-image: linear-gradient(to right, #B86ADF, #FF6C63,#FFBA47);
 }
+.email-form{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}

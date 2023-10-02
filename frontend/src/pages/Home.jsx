@@ -6,11 +6,12 @@ import Services from './Services';
 import Skills from './Skills';
 import Work from './Work';
 import Contact from './Contact';
+import Experience from './Experience';
+import About from './About';
 const links= ["Home","About","Services","Work","Contact"];
 
 const Home = () => {
   return (
-    <div>
       <Stack display={"flex"} flexDirection={"row"} >
         <Box 
             flex={1.5} 
@@ -62,9 +63,8 @@ const Home = () => {
                 </Typography>
             </Box>
         </Box>
-        <Contact/>
+        <About/>
       </Stack>
-    </div>
   )
 }
 
