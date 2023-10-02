@@ -4,6 +4,8 @@ import {    Facebook, GitHub, LinkedIn} from '@mui/icons-material';
 import Dashboard from './Dashboard';
 import Services from './Services';
 import Skills from './Skills';
+import Work from './Work';
+import Contact from './Contact';
 const links= ["Home","About","Services","Work","Contact"];
 
 const Home = () => {
@@ -60,7 +62,7 @@ const Home = () => {
                 </Typography>
             </Box>
         </Box>
-        <Skills/>
+        <Contact/>
       </Stack>
     </div>
   )
