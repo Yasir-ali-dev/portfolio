@@ -4,7 +4,6 @@ import React from 'react'
 
 const Dashboard = () => {
   return (
-    <>
       <Box 
             flex={7} 
             display={"flex"}
@@ -63,8 +62,8 @@ const Dashboard = () => {
             <Instagram fontSize='large'/>
             <EmailOutlined fontSize='large'/>   
           </Box>
+          
         </Box>
-    </>
   )
 }
 

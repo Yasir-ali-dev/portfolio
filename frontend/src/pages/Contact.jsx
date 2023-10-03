@@ -4,8 +4,14 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <Stack flex={7} display={"flex"} flexDirection={"row"} alignItems={"center"}  justifyContent={"center"} >
-      <Box padding={"3em"} flex={1}>
+    <Stack 
+      flex={7} 
+      display={"flex"} 
+      alignItems={"center"}  
+      justifyContent={"center"} 
+      direction={{md:"row", xs:"column" , lg:"row",sm:"column"}}
+    >
+      <Box padding={{md:"3em", sm:"1.5em",xs:"1em", lg:"3em"}} paddingY={{md:"5em", sm:"2em",xs:"1em", lg:"5em"}} flex={1}>
         <Box display={"flex"} flexDirection={"column"} gap={1.7} padding={1.5}>
             <Typography variant='h6'>Contact</Typography>
             <Typography variant='h3' fontWeight={"bolder"} >REACH OUT ME</Typography>

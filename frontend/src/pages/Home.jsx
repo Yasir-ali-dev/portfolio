@@ -1,20 +1,12 @@
 import React from 'react'
-import {Box,  Stack, Typography} from '@mui/material';
+import {Box,  Typography} from '@mui/material';
 import {    Facebook, GitHub, LinkedIn} from '@mui/icons-material';
-import Dashboard from './Dashboard';
-import Services from './Services';
-import Skills from './Skills';
-import Work from './Work';
-import Contact from './Contact';
-import Experience from './Experience';
-import About from './About';
 const links= ["Home","About","Services","Work","Contact"];
 
 const Home = () => {
   return (
-      <Stack display={"flex"} flexDirection={"row"} >
         <Box 
-            flex={1.5} 
+            position={"sticky"}
             sx={{
                 backgroundColor:"#141313", 
                 color :"#FFFFFF"
@@ -24,13 +16,13 @@ const Home = () => {
             padding={"0em 1em"}
             justifyContent={"space-around"}
             height={"100vh"}
+            width={"10em"}
         >
             <Box
                 sx={{
                     padding:".5em .9em "
                 }} 
             >
-            
                 <Typography variant='h3'>Yasir.</Typography>
             </Box>
           
@@ -62,9 +54,8 @@ const Home = () => {
                 Copyright ©2023 Yasir Ali. All right reserved.
                 </Typography>
             </Box>
+
         </Box>
-        <About/>
-      </Stack>
   )
 }
 

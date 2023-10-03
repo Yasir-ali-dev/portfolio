@@ -6,14 +6,26 @@ const Skills = () => {
 
 
   return (
-    <Stack flex={7} padding={"3em"} gap={1.5}>
-      <Typography 
+    <Stack 
+      padding={"3em"} 
+      gap={1.5}
+    >
+      <Typography
+        textAlign={{ sm:"center", xs: "center", lg:"start", md:"start"} }
         variant='h4'
       >Skills</Typography>
       <Typography 
         variant='h3'
+        textAlign={{ sm:"center", xs: "center", lg:"start", md:"start"} }
         >Check Out My Skills</Typography>
-      <Box display={"flex"} flexDirection={"row"} gap={2} >
+      <Stack 
+        display={"flex"} 
+        gap={2} 
+        alignItems={"center"}
+        justifyContent={"center"}
+        flexDirection={"row"}
+        flexWrap={"wrap"}
+      >
       <Card sx={{ maxWidth: 270 }}>
         <CardActionArea>
           <CardMedia
@@ -69,7 +81,7 @@ const Skills = () => {
             </CardContent>
         </CardActionArea>
         </Card>
-      </Box>
+      </Stack>
       <Button 
             sx={{
                 alignSelf:"center",

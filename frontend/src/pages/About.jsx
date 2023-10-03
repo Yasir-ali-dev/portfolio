@@ -1,4 +1,4 @@
-import { ArrowUpward, Image, LocationOn, Mail, Man2, Phone } from '@mui/icons-material';
+import { AllInclusiveOutlined, ArrowUpward, Image, LocationOn, Mail, Man2, Phone } from '@mui/icons-material';
 import { Box, Button, Stack, TextField, Typography } from '@mui/material';
 import React from 'react'
 
@@ -18,7 +18,7 @@ const About = () => {
                     <Button variant='text'>Download CV <ArrowUpward/></Button>
                 </Box>
             </Box>
-            <Box flex={2} padding={"0 2em"} display={"flex"} flexDirection={"column"} gap={2.2}>
+            <Box flex={2} padding={"0 2em"} display={"flex"} flexDirection={"column"} gap={3}>
                 <Box display={"grid"} gridTemplateColumns={"1fr 1fr"} gap={1}>
                     <Box display={"flex"} gap={2} alignItems={"center"}>
                         <Phone fontSize='large'/>
@@ -58,6 +58,18 @@ const About = () => {
                             I have acquired the skills and knowledge necessary to make your project a success. 
                         </Typography>
                     </Box>
+                </Box>
+                <Box 
+                    display={"flex"} 
+                    flexDirection={"row"} 
+                    justifyContent={"center"} 
+                    alignItems={"center"} 
+                    padding={"1.5em"} 
+                    gap={2}
+                    sx={{backgroundColor:"#141313", color:"white"}}
+                >
+                    <AllInclusiveOutlined fontSize='large'/>    
+                    <Typography textTransform={"capitalize"} variant='h5'>Consistency is the key to success</Typography>
                 </Box>
             </Box>
         </Stack>        

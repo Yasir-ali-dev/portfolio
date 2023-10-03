@@ -4,8 +4,22 @@ import React from 'react'
 
 const Experience = () => {
   return (
-    <Stack flex={7} className='form' display={"flex"} flexDirection={"row"} alignItems={"center"}  justifyContent={"center"} gap={1} >
-      <Box padding={"3em"} flex={1} gap={2} display={"flex"} flexDirection={"column"}>
+    <Stack 
+      className='form' 
+      display={"flex"} 
+      direction={{md:"row", xs:"column" , lg:"row",sm:"column"}}
+      alignItems={"center"}  
+      justifyContent={"center"} 
+      gap={1} 
+      padding={{md:"3em", sm:"1.5em",xs:"1em", lg:"3em"}} 
+      paddingY={{ sm:"4em",xs:"2em",md:"5em", lg:"7em"}} 
+    >
+      <Box 
+        flex={1} 
+        gap={2} 
+        display={"flex"} 
+        flexDirection={"column"}
+      >
             <Typography variant='h6'>Experience</Typography>
             <Typography variant='h3' fontWeight={"bolder"} >My Experience</Typography>
             <Typography  variant="body1">
@@ -22,9 +36,10 @@ const Experience = () => {
                 variant='contained' 
             >Download my Resume <ArrowUpward sx={{marginLeft:"1em"}}/></Button>
       </Box>
-      <Box flex={1} padding={3}>
+      
+      <Box flex={1} >
           <Box paddingY={2} gap={1} display={"flex"} flexDirection={"column"}>
-            <Typography variant='h3'>Java Development</Typography>
+            <Typography variant="h3">Java Development</Typography>
             <Typography variant='body1'>1 year</Typography>
             <hr color='#B86ADF'/>
           </Box>  
