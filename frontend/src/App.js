@@ -1,5 +1,4 @@
 import { Box, createTheme, responsiveFontSizes } from "@mui/material";
-import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import Experience from "./pages/Experience";
 import React from "react";

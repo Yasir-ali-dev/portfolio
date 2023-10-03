@@ -44,7 +44,6 @@ const Header = () => {
                         <GitHub fontSize='large'/>
                         <LinkedIn fontSize='large'/>
                         <Facebook fontSize='large'/>
-        
                     </Box>
                 </>)
             }

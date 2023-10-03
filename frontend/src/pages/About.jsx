@@ -4,10 +4,23 @@ import React from 'react'
 
 const About = () => {
   return (
-    <Stack padding={"3em"} flex={7  }>
-        <Typography variant='h6'>Nice to meet you!</Typography>
-        <Typography variant='h4'>WELCOME TO...</Typography>
-        <Stack display={"flex"} padding={"1em"} flexDirection={"row"} gap={2}>
+    <Stack 
+        padding={"3em"} 
+    >
+        <Typography 
+            variant='h6' 
+            textAlign={{xs:"center", sm:"start"}}
+        >Nice to meet you!</Typography>
+        <Typography 
+            variant='h4' 
+            textAlign={{xs:"center", sm:"start"}}
+        >WELCOME TO...</Typography>
+        <Stack 
+            display={"flex"} 
+            padding={"1em"} 
+            direction={{md:"row", xs:"column" , lg:"row",sm:"row"}}
+            gap={2}
+        >
             <Box flex={1} >
                 <Box border={"1px solid"}>
                     <img src={require("../assets/tracking.jpg")} alt="image_"  width={"100%"}/>
@@ -18,8 +31,14 @@ const About = () => {
                     <Button variant='text'>Download CV <ArrowUpward/></Button>
                 </Box>
             </Box>
-            <Box flex={2} padding={"0 2em"} display={"flex"} flexDirection={"column"} gap={3}>
-                <Box display={"grid"} gridTemplateColumns={"1fr 1fr"} gap={1}>
+            <Box 
+                flex={{ md:2,lg:2 , sm:1,xs:1}} 
+                paddingX={{ md:"2em", lg:"2em", sm:".5em", xs:".1em"}} 
+                display={"flex"} 
+                flexDirection={"column"}  
+                gap={{md: 3, sm:2, xs:2 }}
+            >
+                <Box display={"grid"} gridTemplateColumns={"repeat(auto-fill, minmax(230px, 1fr))"} gap={1}>
                     <Box display={"flex"} gap={2} alignItems={"center"}>
                         <Phone fontSize='large'/>
                         <Typography>{" "}+92 311 2172777</Typography>
@@ -38,7 +57,11 @@ const About = () => {
                     </Box>
                 </Box>
                 <hr color='grey'/>
-                <Box display={"flex"} flexDirection={"row"} gap={2} >
+                <Stack
+                    display={"flex"} 
+                    gap={{ md:2, lg:2, sm:1, xs:1 }} 
+                    direction={{md:"row", xs:"column" , lg:"row",sm:"column"}}
+                >
                     <Box flex={1}>
                         <Box display={"flex"} alignItems={"center"}>
                             <Typography variant='h4'>1+</Typography>
@@ -58,12 +81,12 @@ const About = () => {
                             I have acquired the skills and knowledge necessary to make your project a success. 
                         </Typography>
                     </Box>
-                </Box>
+                </Stack>
                 <Box 
                     display={"flex"} 
                     flexDirection={"row"} 
                     justifyContent={"center"} 
-                    alignItems={"center"} 
+                    alignItems={"center"}   
                     padding={"1.5em"} 
                     gap={2}
                     sx={{backgroundColor:"#141313", color:"white"}}
