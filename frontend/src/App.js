@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, createTheme, responsiveFontSizes } from "@mui/material";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import Experience from "./pages/Experience";
@@ -10,18 +10,24 @@ import Contact from "./pages/Contact";
 import Work from "./pages/Work";
 import Header from "./pages/Header";
 import Footer from "./pages/Footer";
+import { ThemeProvider } from "@emotion/react";
+
+let theme = createTheme();
+theme = responsiveFontSizes(theme);
 
 function App() {
   return (
     <React.Fragment>
-      <Header />
-      <Dashboard />
-      <About />
-      <Experience />
-      <Work />
-      <Skills />
-      <Contact />
-      <Footer />
+      <ThemeProvider theme={theme}>
+        <Header />
+        <Dashboard />
+        <About />
+        <Experience />
+        <Work />
+        <Skills />
+        <Contact />
+        <Footer />
+      </ThemeProvider>
     </React.Fragment>
   );
 }
