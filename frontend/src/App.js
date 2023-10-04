@@ -11,7 +11,6 @@ import Header from "./pages/Header";
 import Footer from "./pages/Footer";
 import { ThemeProvider } from "@emotion/react";
 import Technologies from "./pages/Technologies";
-
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
 

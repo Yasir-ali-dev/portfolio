@@ -12,14 +12,21 @@ const Contact = () => {
       direction={{md:"row", xs:"column" , lg:"row",sm:"column"}}
       padding={{md:"3em", sm:"1.5em",xs:"1em", lg:"3em"}}
       paddingY={{md:"5em", sm:"2em",xs:"1em", lg:"5em"}}
+      gap={{xs:3,md:2,lg:2,xl:2,sm:3}}
     >
-      <Box   flex={1}>
+      <Box flex={1}>
         <Box display={"flex"} flexDirection={"column"} gap={1.7} padding={1.5}>
             <Typography variant='h6'>Contact</Typography>
             <Typography variant='h3' fontWeight={"bolder"} >REACH OUT ME</Typography>
             <Typography  variant="body1">Sukkur IBA University, Near Airport Road, Sukkur, Pakistan</Typography>            
         </Box>
-        <Box display={"flex"} flexDirection={"column"} gap={.51} marginY={4} padding={1.5}> 
+        <Box 
+          display={"flex"} 
+          flexDirection={"column"} 
+          gap={.51} 
+          marginY={{md:4,lg:4,sm:2,xs:1.5}} 
+          padding={1.5}
+        > 
             <Typography fontWeight={"bolder"} variant='h5'>+92 311 2172777</Typography>
             <Typography fontWeight={"bolder"} variant='h5'>yasirali.bscssef20@iba-suk.edu.pk</Typography>
         </Box>

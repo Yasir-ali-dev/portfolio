@@ -43,10 +43,10 @@ const Experience = () => {
         flex={1} 
         display={"flex"} 
         flexDirection={{md:"column", xs:"row" , lg:"column",sm:"row"}}
-        gap={{md:2, xs: 1 , lg:2,sm:2}}  
+        gap={{md:2, xs:2 , lg:2,sm:2}}  
         paddingY={{md:2, xs:2 , lg:2,sm:4}}      
         flexWrap={"wrap"}
-        justifyContent={"center"}
+        justifyContent={{ xs:"start", sm:"center"}}
       >
           <Box paddingY={2} gap={1} display={"flex"} flexDirection={"column"}>
             <Typography 
