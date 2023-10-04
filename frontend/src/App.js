@@ -10,6 +10,7 @@ import Work from "./pages/Work";
 import Header from "./pages/Header";
 import Footer from "./pages/Footer";
 import { ThemeProvider } from "@emotion/react";
+import Technologies from "./pages/Technologies";
 
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
@@ -20,6 +21,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <Header />
         <Dashboard />
+        <Technologies />
         <About />
         <Experience />
         <Work />
