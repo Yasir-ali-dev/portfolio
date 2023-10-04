@@ -10,8 +10,10 @@ const Contact = () => {
       alignItems={"center"}  
       justifyContent={"center"} 
       direction={{md:"row", xs:"column" , lg:"row",sm:"column"}}
+      padding={{md:"3em", sm:"1.5em",xs:"1em", lg:"3em"}}
+      paddingY={{md:"5em", sm:"2em",xs:"1em", lg:"5em"}}
     >
-      <Box padding={{md:"3em", sm:"1.5em",xs:"1em", lg:"3em"}} paddingY={{md:"5em", sm:"2em",xs:"1em", lg:"5em"}} flex={1}>
+      <Box   flex={1}>
         <Box display={"flex"} flexDirection={"column"} gap={1.7} padding={1.5}>
             <Typography variant='h6'>Contact</Typography>
             <Typography variant='h3' fontWeight={"bolder"} >REACH OUT ME</Typography>
@@ -21,14 +23,14 @@ const Contact = () => {
             <Typography fontWeight={"bolder"} variant='h5'>+92 311 2172777</Typography>
             <Typography fontWeight={"bolder"} variant='h5'>yasirali.bscssef20@iba-suk.edu.pk</Typography>
         </Box>
-        <ButtonGroup sx={{gap:2}} padding={2}>
+        <ButtonGroup sx={{gap:1}} padding={2}>
             <Button variant='text' >FACEBOOK</Button>
             <Button variant='text'>GITHUB</Button>
             <Button variant='text'>LINKEDIN</Button>
             <Button variant='text'>INSTAGRAM</Button>
         </ButtonGroup>
       </Box>
-      <Box  padding={"1.5em"} flex={1.5}>
+      <Box  flex={1.5}>
         <Box className="form" padding={"2em"}>
            <Typography variant='h4'>EMAIL ME</Typography> 
            <form className='email-form'>

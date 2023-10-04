@@ -42,9 +42,11 @@ const Experience = () => {
       <Box 
         flex={1} 
         display={"flex"} 
-        flexDirection={{md:"column", xs:"column" , lg:"column",sm:"row"}}
+        flexDirection={{md:"column", xs:"row" , lg:"column",sm:"row"}}
         gap={{md:2, xs: 1 , lg:2,sm:2}}  
         paddingY={{md:2, xs:2 , lg:2,sm:4}}      
+        flexWrap={"wrap"}
+        justifyContent={"center"}
       >
           <Box paddingY={2} gap={1} display={"flex"} flexDirection={"column"}>
             <Typography 
@@ -53,20 +55,21 @@ const Experience = () => {
             <Typography variant='body1'>1 year</Typography>
             <hr color='#B86ADF'/>
           </Box>  
-          <Box paddingY={2} gap={1} display={"flex"} flexDirection={"column"}>
-            <Typography 
-              fontSize={{sm:30,xs:20,md:35,lg:40,xl:45}} 
-              variant='h3'>React js</Typography>
-            <Typography variant='body1'>1.5 year</Typography>
-            <hr color='#FF6C63'/>
-          </Box>      
+                
           <Box paddingY={2} gap={1} display={"flex"} flexDirection={"column"}>
             <Typography 
               fontSize={{sm:30,xs:20,md:35,lg:40,xl:45}} 
               variant='h3'>Node js Backend</Typography>
             <Typography variant='body1'>6 months</Typography>
             <hr color='#FFBA47'/>
-          </Box>          
+          </Box> 
+          <Box paddingY={2} gap={1} display={"flex"} flexDirection={"column"}>
+            <Typography 
+              fontSize={{sm:30,xs:20,md:35,lg:40,xl:45}} 
+              variant='h3'>React js Frontend </Typography>
+            <Typography variant='body1'>1.5 year</Typography>
+            <hr color='#FF6C63'/>
+          </Box>         
       </Box>
 
     </Stack>

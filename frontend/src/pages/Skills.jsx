@@ -26,11 +26,11 @@ const Skills = () => {
         flexDirection={"row"}
         flexWrap={"wrap"}
       >
-      <Card sx={{ maxWidth: 270 }}>
+      <Card sx={{ maxWidth:{ md: 270 , lg: 270 ,sm:270, xs:350 , xl:400} }}>
         <CardActionArea>
           <CardMedia
             component="img"
-            height="200"
+            height={220}
             image={require("../assets/software.webp")}
             alt="green iguana"
             />
@@ -45,11 +45,11 @@ const Skills = () => {
         </CardActionArea>
         </Card>
 
-        <Card sx={{ maxWidth: 270 }}>
+        <Card sx={{ maxWidth:{ md: 270 , lg: 270 ,sm:270, xs:350 , xl:400} }}>
         <CardActionArea>
           <CardMedia
             component="img"
-            height="200"
+            height={220}
             image={require("../assets/java2.png")}
             alt="green iguana"
             />
@@ -63,11 +63,11 @@ const Skills = () => {
             </CardContent>
         </CardActionArea>
         </Card>
-        <Card sx={{ maxWidth: 270 }}>
-        <CardActionArea>
+        <Card sx={{ maxWidth:{ md: 270 , lg: 270 ,sm:270, xs:350 , xl:400} }}>
+        <CardActionArea>  
           <CardMedia
             component="img"
-            height="200"
+            height={220}
             image={require("../assets/js.png")}
             alt="green iguana"
             />
