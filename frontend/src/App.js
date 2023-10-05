@@ -11,6 +11,8 @@ import Header from "./pages/Header";
 import Footer from "./pages/Footer";
 import { ThemeProvider } from "@emotion/react";
 import Technologies from "./pages/Technologies";
+import Slider from "./pages/Slider";
+import Projects from "./pages/Projects";
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
 
@@ -27,6 +29,8 @@ function App() {
         <Skills />
         <Contact />
         <Footer />
+        {/* <Slider /> */}
+        {/* <Projects /> */}
       </ThemeProvider>
     </React.Fragment>
   );

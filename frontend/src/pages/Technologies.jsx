@@ -14,42 +14,42 @@ const Technologies = () => {
       alignItems={"center"}
       flexWrap={"wrap"}
       >
-        <Box width={"90px"} alignSelf={"center"}>
+        <Box width={"90px"} >
           <img 
-            src={require("../assets/React-icon.svg.png")} 
+            src={require("../assets/react.svg")} 
             alt="react-logo"
             width={"100%"}
              />
         </Box> 
-        <Box  width={"90px"} alignSelf={"center"}>
+        <Box  width={"90px"} >
           <img 
-            src={require("../assets/nod.png")} 
+            src={require("../assets/node-js.svg")} 
             alt="nodejs-logo"
             width={"100%"}
              />
         </Box> 
-        <Box width={"170px"} alignSelf={"center"}>
+        <Box width={"90px"} >
           <img 
-            src={require("../assets/Expressjs.png")} 
+            src={require("../assets/java.svg")} 
             alt="express-logo"
             width={"100%"}
              />
         </Box> 
-        <Box width={"170px"} >
+        <Box width={"90px"} >
           <img 
             width={"100%"}
             alignSelf={"center"}
-            src={require("../assets/MongoDB-Logo.png")} 
+            src={require("../assets/mongodb.svg")} 
             alt="mongodb"
-            style={{transform:"scale(1.3)"}}
+            
              />
         </Box> 
-        <Box >
+        <Box width={"90px"}>
           <img
             alignSelf={"center"} 
-            src={require("../assets/js.png")} 
+            src={require("../assets/JScript.svg")} 
             alt="JS-logo"
-            width={"75px"}
+            width={"100%"}
              />
         </Box>   
     </Stack>
